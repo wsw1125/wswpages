@@ -113,6 +113,7 @@ a{
 	background: url(../img/zc2.png) no-repeat 0px 13px; 
 }
 #reg,#login {
+	display:none;
 	padding:15px 0 0 15px;
 }
 #reg p,#login p  {
@@ -152,6 +153,7 @@ a{
 	color:#666;
 }
 #loading {
+	display:none;
 	background:url(../img/loading.gif) no-repeat 20px center;
 	line-height:25px;
 	font-size:14px;
