@@ -1,15 +1,121 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-	<meta charset="UTF-8">
-	<title>Document</title>
-	<script src="js.js"></script>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>我的个人站</title>
+	<script src="js/jquery-3.0.0.js"></script>
+	<script  src="js/index.js"></script>
+	<link rel="Shortcut Icon" href="images/geren.ico"/>
+	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-	<div style="background: red; width: 200px; height: 100px;" id="div1">
-		<span>aa</span>
+	<div id="bg1"><img src="images/bg1.png" alt=""></div>
+	<div id="header">
+		<div id="logo"><img src="images/logo.png" alt=""></div>
+		<ul id="nav">
+			<li class="act">首页</li>
+			<li>简介</li>
+			<li>作品</li>
+			<li>关于</li>
+			<li>联系</li>
+		</ul>
+		<div class="side"></div>
 	</div>
-	<input type="button" value="获取">
-	<a href="dd.html">W3School</a>
+	<div id="mian">
+		<div class="content">
+			<div class="cont page1">第一页</div>
+			<div class="cont page2">
+				<div class="btn"><img src="images/gb1.png" alt=""></div>
+				<canvas id="canvas" width="1150px" height="180px"></canvas>
+				<ul class="binlist">
+					<li><img src="images/data1.png" alt=""><p>基本资料</p></li>
+					<li><img src="images/data2.png" alt=""><p>教育经历</p></li>
+					<li><img src="images/data3.png" alt=""><p>兴趣爱好</p></li>
+					<li><img src="images/data4.png" alt=""><p>自我评价</p></li>
+				</ul>
+				<div class="bord"><span>我的个人简介</span></div>
+			</div>
+			<div class="cont page3">
+				<div class="btn"><img src="images/gb1.png" alt=""></div>
+				<div class="caseul">
+					<ul>
+						<li class="pos_1"><img src="images/case1.jpg" alt=""><div class="name"><h3>仿微博前端1</h3>利用ajax注册和登录<br>Date:2016-8-10</div></li>
+						<li class="pos_2"><img src="images/case1.jpg" alt=""><div class="name"><h3>仿微博前端2</h3>利用ajax注册和登录<br>Date:2016-8-10</div></li>
+						<li class="pos_3"><img src="images/case1.jpg" alt=""><div class="name"><h3>仿微博前端3</h3>利用ajax注册和登录<br>Date:2016-8-10</div></li>
+						<li class="pos_4"><img src="images/case1.jpg" alt=""><div class="name"><h3>仿微博前端4</h3>利用ajax注册和登录<br>Date:2016-8-10</div></li>
+						<li class="pos_5"><img src="images/case1.jpg" alt=""><div class="name"><h3>仿微博前端5</h3>利用ajax注册和登录<br>Date:2016-8-10</div></li>
+					</ul>
+					<div class="butn prev"></div>
+					<div class="butn next"></div>
+				</div>
+				
+				<div class="bord"><span>我的个人作品</span></div>
+			</div>
+			<div class="cont page4">
+				<div class="btn"><img src="images/gb1.png" alt=""></div>
+				<ul class="menu">
+					<li class="active">关于</li>
+					<li>思想</li>
+					<li>铭记</li>
+				</ul>
+				<div class="menulist">
+					<ul>
+						<li>我是一个怎样的人，以及关于我自己的一些东西，爱好、兴趣、性格。是安徽的叫骄傲安德海或女UC还娿断货都护恩恩出</li>
+						<li>我们的生活就像旅行，思想是导游者，没有导游者，一切都会停止。目标会丧失，力量也会化为乌有。——歌德</li>
+						<li><h3>放眼未来</h3>心有多大，舞台就有多大！<br>今天最好的表现是明天最低的要求！<br>生命在于折腾，不在折腾中崩溃，就在折腾中涅磐！<br>快乐工作，认真生活！<br>SO TMD WHAT！</li>
+					</ul>
+				</div>
+					
+				<div class="bord"><span>关于思想</span></div>
+			</div>
+			<div class="cont page5">
+				<div class="btn"><img src="images/gb1.png" alt=""></div>
+				<form id="contactform">
+					<h2>给我留言</h2>
+					<input id="input_name" class="inputname" placeholder="姓名" name="input_name" type="text">
+					<input id="input_tel" placeholder="电话" name="input_tel"  type="text">
+					<input id="input_email" placeholder="邮箱" name="input_email" type="text">
+					<textarea id="input_content" name="input_content" rows="4" cols="10"  placeholder="内容" ></textarea>
+					<input id="input_submit" value="提交" type="submit">
+				</form>
+				<div id="code"><img src="images/code.jpg" alt=""></div>
+				<div id="information">
+				<h1>仰望</h1>
+				<p>联系电话：13553875200</p>
+				<p>QQ：2575650480</p>
+				<p>邮箱：2575650480@qq.com</p>
+				<p>地址：广东东莞市长安</p>
+				</div>
+
+
+			</div>
+		</div>
+	</div>
+	<ul class="follow_box">
+			<li>TEL:13500005274</li>
+			<li>QQ:2575650480</li>
+			<li><img src="images/code.jpg" alt="" width="165px"></li>
+	</ul>
+	<div id="followme">
+		<ul class="followmeLi">
+			<li class="image1"></li>
+			<li class="image2"></li>
+			<li class="image3"></li>
+		</ul>
+	</div>
+
+	<div id="figtit">广告图片</div>
+	<div id="figimg">
+		<div class="btnfig figprev"> &lsaquo; </div>
+		<div class="btnfig fignext"> &rsaquo; </div>
+		<ul>
+			<li class="img1"><img src="images/f1.jpg" alt=""></li>
+			<li class="img2"><img src="images/f2.jpg" alt=""></li>
+			<li class="img3"><img src="images/f3.jpg" alt=""></li>
+			<li class="img4"><img src="images/f4.jpg" alt=""></li>
+			<li class="img5"><img src="images/f5.jpg" alt=""></li>
+		</ul>
+	</div>
+	<div id="footer">我是底部</div>
 </body>
-</html>
+</html>	
