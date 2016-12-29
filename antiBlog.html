@@ -1,0 +1,306 @@
+<!DOCTYPE HTML>
+<html lang=en>
+<head>
+	<meta charset="UTF-8">
+	<title>我的首页-微博</title>
+	<!-- <link rel="shortcut icon" href="weibo.ico" /> -->
+	<link rel="Shortcut Icon" href="img/weibo.ico"/>
+	<link rel="stylesheet"  href="css/smoothness/jquery.ui.css"/>
+	<link rel="stylesheet"  href="css/styleblog.css"/>
+</head>
+<body>
+	<div id="header">
+		<div class="logo"><img src="img/logo.jpg" alt="" /></div>
+		<div class="header_search">
+			<input type="text" name="search" class="search" placeholder="大家正在搜"/>
+		</div>
+		<ul class="topnav">
+			<li class="home" ><span>首页</span></li>
+			<li class="loginbt" ><span>登录</span></li>
+			<li class="logout" ><span>退出</span></li>
+
+			<li class="regbt" ><span>注册</span></li>
+			<li class="member" ><span>用户</span></li>
+			
+			<li class="email" ><span>邮件</span></li>
+			<li class="setup" ><span>设置</span></li>
+		</ul>
+	<form id="reg" action="123.html" title="会员注册">
+		<ol class="reg_error"></ol>
+		<p>
+		<label for="user">帐号：</label>
+		<input type="text" name="user" class="text" id="user"  />
+		<span class="star">*</span>
+		</p>
+		<p>
+		<label for="pass">密码：</label>
+		<input type="password" name="pass" class="text" id="pass" />
+		<span class="star">*</span>
+		</p>
+		<p>
+		<label for="email">邮箱：</label>
+		<input type="text" name="email" class="text" id="email" />
+		<span class="star">*</span>
+		</p>
+		<p>
+		<label>性别：</label>
+		<input type="radio" name="sex" value="male" id="male" checked="checked"><label for="male">男</label></input><input type="radio" name="sex" value="female" id="female"><label for="female">女</label></input>
+		</p>
+		<p>
+		<label for="date">生日：</label>
+		<input type="text" name="birthday" readonly="readonly" class="text" id="date" />
+		</p>
+	</form>
+
+	<form id="login" title="会员登录">
+		<ol class="login_error"></ol>
+		<p>
+			<label for="user">帐号：</label>
+			<input type="text" name="login_user" class="text" id="login_user" />
+			<span class="star">*</span>
+		</p>
+		<p>
+			<label for="pass">密码：</label>
+			<input type="password" name="login_pass" class="text" id="login_pass" />
+			<span class="star">*</span>
+		</p>
+		<p>
+			<input type="checkbox" name="expires" id="expires" checked="checked" /><label for="expires">登录后有效期一周</label>
+		</p>
+	</form>
+
+	<div id="loading">数据交互中...</div>
+	</div>
+	<div id="main">
+		<div class="leftMain">
+			<ul class="leftnavup">
+				<li><a href="javascript:void(0)">首页</a></li>
+				<li><a href="javascript:void(0)">我的收藏</a></li>
+				<li><a href="javascript:void(0)">我的赞</a></li>
+				<li>——————</li>
+				<li><a href="javascript:void(0)">热门微博</a></li>
+				<li>——————</li>
+				<li><a href="javascript:void(0)">好友圈</a></li>
+				<li><a href="javascript:void(0)">群微博</a></li>
+				<li><a href="javascript:void(0)">特别关注</a></li>
+			</ul>	
+			<ul class="leftnavdown">
+				<li><a href="javascript:void(0)">高校</a></li>
+				<li><a href="javascript:void(0)">美图</a></li>
+				<li><a href="javascript:void(0)">设计</a></li>
+				<li><a href="javascript:void(0)">人力资源</a></li>
+				<li><a href="javascript:void(0)">明星</a></li>
+			</ul>
+		</div>
+		<div class="inMain">
+			<div class="conhead">
+				<div class="titleh">有什么新鲜事想告诉大家？<span>热门微博</span></div>
+				<textarea class="textinput" ></textarea>
+				<div class="list">
+					<ul>
+						<li class="list1"><span>表情</span></li>
+						<li class="list2"><span>图片</span></li>
+						<li class="list3"><span>视频</span></li>
+						<li class="list4"><span>话题</span></li>
+						<li class="list5"><span>头条文章</span></li>
+						<li class="list6"><span>...</span></li>
+					</ul>
+				</div>
+				<span class="publicbtn">公开∨</span>
+				<button type="button" class="releasebtn">发布</button>
+			</div>
+			<div class="concentral">
+				<div class="mainnav ">
+					<ul>
+						<li><a href="javascript:void(0)">全部</a></li>
+						<li><a href="javascript:void(0)">原创</a></li>
+						<li><a href="javascript:void(0)">图片</a></li>
+						<li><a href="javascript:void(0)">视频</a></li>
+						<li><a href="javascript:void(0)">音乐</a></li>
+						<li><a href="javascript:void(0)">文章</a></li>
+					</ul>
+					<input type="text" name="mainsearch" class="mainsearch" placeholder="搜索我关注人的微博"/>
+				</div>
+				
+			</div>
+			<div class="confooter">
+				<div id="phtShow"><img src="img/pht1.jpg" alt=""></div>
+				<div class="frame">
+					<div class="phtot"><img src="img/wb1.jpg" alt=""></div>
+					<div class="content">
+						<div class="textitle"><h4>中国青年报</h4>十分钟前 来自 政务直通车</div>
+						<div class="textcontent">【理解质疑声，珍惜被质疑淹没的温暖留言】做了好事，自己觉得心安，那就足够了。如果还有很多人从中感到了温暖，那就无比欣慰了。没必要苛求每个人的感动和点赞，对苛评恶评也不要义愤填膺，人们看问题的视角本就千差万别，更何况信任在这个时代早成了稀缺品。</div>
+						<div class="textimg">
+							<img src="img/pht1.jpg" alt="">
+							<img src="img/pht2.jpg" alt="">
+						</div>
+					</div>
+					<div class="foot">
+						<ul>
+							<li class="sc"><span>收藏</span></li>
+							<li class="zf"><span>转发</span></li>
+							<li class="pl"><span>评论</span></li>
+							<li class="zz"><span>赞</span></li>
+						</ul>
+					</div>
+				</div>
+				<div class="frame">
+					<div class="phtot"><img src="img/wb2.jpg" alt=""></div>
+					<div class="content">
+						<div class="textitle"><h4>华尔街日报</h4>二十分钟前 来自 微博 weibo.com</div>
+						<div class="textcontent">【微软和华为联手传达网络安全信息】- 分别感受到中国和美国政府压力的微软和华为联手编写了“客户须知”，旨在缓解对信息技术新合约可能带来网络安全威胁的担忧。该“客户须知”的目标群体是购买信息及通讯技术产品和服务的政府和企业。这份“客户须知”的内容不是评价和排名，而是有关技术开发、制造...</div>
+						<div class="textimg">
+							<img src="img/pht3.jpg" alt="">
+							<!-- <img src="img/pht2.jpg" alt=""> -->
+						</div>
+					</div>
+					<div class="foot">
+						<ul>
+							<li class="sc"><span>收藏</span></li>
+							<li class="zf"><span>转发</span></li>
+							<li class="pl"><span>评论</span></li>
+							<li class="zz"><span>赞</span></li>
+						</ul>
+					</div>
+				</div>
+				<div class="frame">
+					<div class="phtot"><img src="img/wb3.jpg" alt=""></div>
+					<div class="content">
+						<div class="textitle"><h4>华西都市报</h4>一小时前 来自 微博 weibo.com</div>
+						<div class="textcontent">
+							【三星宣布召回1858台Galaxy Note7 免费更换同款】经国家质检总局约谈后，三星(中国)宣布自9月14日起，召回2016年7月20日至8月5日制造的部分Galaxy Note7，中国大陆地区受影响的数量为1858台。本次召回的手机电池在一定情况下会出现短路，导致电池异常发热，极端情况下可能发生燃烧。三星（中国）将免...</div>
+						<div class="textimg">
+							<img src="img/pht4.gif" alt="">
+							<img src="img/pht5.jpg" alt="">
+						</div>
+					</div>
+					<div class="foot">
+						<ul>
+							<li class="sc"><span>收藏</span></li>
+							<li class="zf"><span>转发</span></li>
+							<li class="pl"><span>评论</span></li>
+							<li class="zz"><span>赞</span></li>
+						</ul>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+		<div class="rightMain">
+			<div class="rightheader">
+				<div class="headpor"></div>
+				<div class="nicename">仰望<span>lv9</span></div>
+				<div class="data">
+					<div class="attention">993<br>关注</div>
+					<div class="fans">888<br>粉丝</div>
+					<div class="weibo">888<br>微博</div>
+				</div>
+			</div>
+
+			<div class="rightsong">
+				<div class="text"><a href="javascript:void(0)">亚洲新歌榜实时趋势</a></div>
+				<div class="songname1">
+					<div class="naimg"><img src="img/sn.jpg" alt=""></div>
+					<div class="songna">
+						<span>1</span>洪—冯建宇
+						<div class="nameno">冯建宇<br>100000分</div>
+					</div>
+				</div>
+				<div class="songname2"><span class="no">2</span>心电感应808</div>
+				<div class="songname2"><span class="no">3</span>喜剧</div>
+				<div class="more">查看更多 ></div>
+			</div>
+
+			<div class="card">
+				<ul class="cardimg">
+					<li><a href="javascript:void(0)"><img src="img/t01.jpg" alt=""></a></li>
+					<li><a href="javascript:void(0)"><img src="img/t02.jpg" alt=""></a></li>
+					<li><a href="javascript:void(0)"><img src="img/t03.jpg" alt=""></a></li>
+					<li><a href="javascript:void(0)"><img src="img/t04.jpg" alt=""></a></li>
+					<li><a href="javascript:void(0)"><img src="img/t05.jpg" alt=""></a></li>
+				</ul>
+				<ul class="num">
+					<li class="active">1</li>
+					<li>2</li>
+					<li>3</li>
+					<li>4</li>
+					<li>5</li>
+				</ul>
+				<div class="butn prev"> < </div>
+				<div class="butn next"> > </div>
+			</div>
+
+			<div class="area">
+				<ul class="areatitle">
+					<li class="tite act">明星专区</li>
+					<li class="tite">明星势力榜</li>
+				</ul>
+				<!-- <div class="tite">明星专区</div>
+				<div class="tite">明星势力榜</div> -->
+				<ul class="areatext">
+					<li class="meonly">
+						<div class="meonlyUp">
+							<div class="meon1">
+								<span class="image"></span>
+								<div class="meonnam">某只某<span class="button">+关注</span></div>
+							</div>
+							<div class="meon2">
+								<span class="image"></span>
+								<div class="meonnam">仰望天空<span class="button">+关注</span></div>
+							</div>
+						</div>
+						<div class="meonlyDown">
+							<p>亲爱的<span>泷勿</span>：<br>尊享会员特权，一起放肆精彩！</p>
+							<a href="##"><img src="img/cak.jpg" alt=""></a>
+							<div class="btns"><button type="button" class="btnle">立即体验</button>
+							<button type="button" class="btnri">开通会员</button>
+							</div>
+						</div>
+					</li>
+					<li class="celebrity">
+						<div class="Inland">内地榜</div>
+						<div class="nano">
+							<div class="no"><span>1</span></div> 
+							<div class="imag"><img src="img/q1.jpg" alt=""></div>
+							<div class="mingzi">杨洋icon<span class="bon">97.85</span></div> 
+						</div>
+						<div class="nano">
+							<div class="no"><span>2</span></div> 
+							<div class="imag"><img src="img/q2.jpg" alt=""></div>
+							<div class="mingzi">汪苏泷<span class="bon">87.555</span></div> 
+						</div>
+						<div class="nano">
+							<div class="no"><span>3</span></div> 
+							<div class="imag"><img src="img/q3.jpg" alt=""></div>
+							<div class="mingzi">TEFBOSY<span class="bon">67.585</span></div> 
+						</div>
+						<div class="Inland">港澳台榜</div>
+						<div class="nano">
+							<div class="no"><span>1</span></div> 
+							<div class="imag"><img src="img/q4.jpg" alt=""></div>
+							<div class="mingzi">钟汉良<span class="bon">97.85</span></div> 
+						</div>
+						<div class="nano">
+							<div class="no"><span>2</span></div> 
+							<div class="imag"><img src="img/q5.jpg" alt=""></div>
+							<div class="mingzi">高以翔<span class="bon">87.555</span></div> 
+						</div>
+						<div class="nano">
+							<div class="no"><span>3</span></div> 
+							<div class="imag"><img src="img/q6.jpg" alt=""></div>
+							<div class="mingzi">庾澄庆<span class="bon">67.585</span></div> 
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div id="backtop"><img src="img/top.png" alt=""></div>
+	<script src="js/jquery-3.0.0.min.js"></script>
+	<script src="js/jquery.ui.js"></script>
+	<script src="js/jquery.validate.js"></script>
+	<script src="js/jquery.form.js"></script>
+	<script src="js/jquery.cookie.js"></script>
+	<script src="js/ablog.js"></script>
+</body>
+</html>

@@ -202,12 +202,14 @@ ol li{
 	display: inline-block;
 	font-size: 15px;
 	color: #fff;
-	cursor: pointer;
 	background: #084363;
 	border-radius: 4px;
 	position: absolute;
 	top:70px;
 	box-shadow: 2px 2px 5px #888888;
+}
+.page3 .caseul a{
+	color: #fff;
 }
 .page3 .caseul .pos_1{
 	width: 80px;
