@@ -1,5 +1,7 @@
-$(function(){
+$(window).load(function (){ 
+/* $(function(){ */
 	//切换页面
+	$('#load').hide();
 	switchpage();
 	/*首页*/
 	/*首页的轮播*/

@@ -42,8 +42,9 @@ a{
 	width:100px;
 	float:left;
 	margin-left:40px;
-	height:50px;
-	line-height:50px;
+	margin-top:0px;
+	height:45px;
+	line-height:45px;
 }
 #header  .search {
 	width:400px;
@@ -219,6 +220,7 @@ a{
 	/* height:1500px; */ 
 	/* background:rgba(196,160,153,0.25); */ 
 	background:rgba(96,50,49,0.25); 
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#33603231,endColorstr=#33603231);
 }
 /* 主体左边 */
  #main .leftMain
@@ -230,7 +232,8 @@ a{
 	height:100%;
 	float:left;
 	margin-top:50px;
-	background:rgba(96,50,49,0.25);  
+	background:rgba(96,50,49,0.25);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#33603231,endColorstr=#33603231);	
 }
 #main .leftMain a:hover{
 	color:#f0844a;
